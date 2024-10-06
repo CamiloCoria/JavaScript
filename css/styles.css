@@ -1,0 +1,42 @@
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2e393d;
+    font-family: Arial, sans-serif;
+    color: #333;
+} */
+.avion {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.fila {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+.butaca {
+    width: 40px;
+    height: 40px;
+    background-color: #000000;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.butaca:hover {
+    background-color: #85df52;
+    border: grey;
+}
+.asiento-pasillo {
+    width: 10px;
+    background-color: #423d3d;
+    margin: 0 5px;
+}
