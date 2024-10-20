@@ -138,43 +138,5 @@
 
 
 
-/* ENTREGA 3 */
+/* ENTREGA F */
 
-class Asiento {
-    constructor (id){
-        this.id = id
-    }
-
-    generarHTML(){
-        return <div class="asiento"></div>
-    }
-}
-
-function renderizarAsientos(){
-    divAsientos.innerHTML = "";
-    for(const filaAsientos of asientos) {
-        const divFila = document.createElement("div")
-        divFila.className ="fila"
-
-        for(const idAsiento of filaAsientos){
-            const asiento = new Asiento(idAsiento)
-            divFila.innerHTML += asiento.generarHTML()
-        }
-        divAsientos.append(divFila)
-    }
-}
-
-
-
-const divAsientos = document.getElementById("asientos")
-const asientos = [
-    ["A1", "A2", "A3", "A4", "A5", "A6"],
-    ["B1", "B2", "B3", "B4", "B5", "B6"],
-    ["C1", "C2", "C3", "C4", "C5", "C6"],
-    ["D1", "D2", "D3", "D4", "D5", "D6"],
-    ["E1", "E2", "E3", "E4", "E5", "E6"],
-    ["F1", "F2", "F3", "F4", "F5", "F6"],
-    ["G1", "G2", "G3", "G4", "G5", "G6"],
-]
-
-renderizarAsientos()

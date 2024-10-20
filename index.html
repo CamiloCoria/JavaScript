@@ -1,15 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Simulación de Cine</title>
+    <link rel="stylesheet" href="./styless/styless.css">
+    <title>Simulador de Cambio</title>
 </head>
-<body>
-    <div class="butacas">
+<body class="fondo">
+    <div class="container">
+        <h1>Simulador de Cambio</h1>
+        
+        <div class="converter">
+            <input type="number" id="dineros" placeholder="Cantidad">
+            <select id="entrada">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="ARG">ARG</option>
+            </select>
+            <span> a </span>
+            <select id="salida">
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="ARG">ARG</option>
+            </select>
+            <button class="conver" id="convertidor">Convertir</button>
+        </div>
 
+        <div class="result" id="resultado"></div>
+
+        <h2>Historial</h2>
+        <ul id="history"></ul>
     </div>
-    <script src="js/main.js"></script>
+
+    <script src="./js/main.js"></script>
 </body>
-</html>
+</html> 
+
