@@ -5,7 +5,7 @@ body {
     padding: 20px;
 }
 
-.container {
+.contenedor {
     max-width: 600px;
     margin: auto;
     background: white;
@@ -18,7 +18,7 @@ h1, h2 {
     text-align: center;
 }
 
-.converter {
+.converti {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +30,7 @@ input, select, button {
     padding: 10px;
 }
 
-.result {
+.resultados {
     text-align: center;
     font-size: 1.2em;
     margin: 20px 0;
